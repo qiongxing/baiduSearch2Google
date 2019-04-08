@@ -1,0 +1,29 @@
+{
+    "name": "百度搜索扩展",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "郁闷每次都要跳转到谷歌页面进行搜索！QAQ,所以直接二合一，233",
+    "icons": {
+        "32": "images/qxTabIco.png",
+        "64": "images/qxTabIco.png",
+        "128": "images/qxTabIco.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.baidu.com/*"
+            ],
+            "css": [
+                "css/baidu2google.css"
+            ],
+            "js": [
+                "js/jquery-3.3.1.min.js",
+                "js/baidu2google.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

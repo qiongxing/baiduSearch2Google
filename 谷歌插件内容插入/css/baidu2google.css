@@ -1,0 +1,16 @@
+#btnGoo{
+    margin-left: 10px;
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #34a853;
+    border: #34a853;
+    outline: medium;
+    cursor: pointer;
+    *border-bottom: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
